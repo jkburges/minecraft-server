@@ -1,4 +1,5 @@
 DEPENDENCIES
+  apt
   minecraft
     git: git://github.com/gregf/chef-minecraft.git
     revision: 4ad53f290122940a3e446d797d0e8c50e56eecc8
