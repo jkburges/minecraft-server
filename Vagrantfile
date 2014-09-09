@@ -14,6 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     chef.json = {
       "minecraft" => {
         "accept_eula" => true,
+        "install_dir" => "/mnt/minecraft",
         "ops" => [ "max_fire_2008" ],
         "url" => "https://s3.amazonaws.com/Minecraft.Download/versions/1.8/minecraft_server.1.8.jar",
         "properties" => {
