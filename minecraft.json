@@ -1,16 +1,15 @@
 {
     "run_list": [
         "recipe[apt]",
-        "recipe[java]",
+        "recipe[java::openjdk]",
         "recipe[minecraft]"
     ],
-    "minecraft" => {
-      "accept_eula" => true,
-      "install_dir" => "/mnt/minecraft",
-      "ops" => [ "max_fire_2008" ],
-      "url" => "https://s3.amazonaws.com/Minecraft.Download/versions/1.8/minecraft_server.1.8.jar",
-      "properties" => {
-        "gamemode" => 1
+    "minecraft": {
+      "accept_eula": true,
+      "install_dir": "/mnt/minecraft",
+      "ops": [ "max_fire_2008" ],
+      "properties": {
+        "gamemode": 1
       }
     }
 }

@@ -1,24 +1,25 @@
 DEPENDENCIES
   apt
+  java
   minecraft
     git: git://github.com/gregf/chef-minecraft.git
-    revision: 4ad53f290122940a3e446d797d0e8c50e56eecc8
+    revision: 3bb78e368c504b94c85caeeac9a8c53c73d6181c
 
 GRAPH
-  apt (2.5.3)
-  build-essential (2.0.6)
-  java (1.28.0)
-  minecraft (0.5.1)
+  apt (2.7.0)
+  build-essential (2.2.2)
+  java (1.31.0)
+  minecraft (0.5.2)
     apt (>= 0.0.0)
     java (>= 0.0.0)
     ohai (>= 0.0.0)
     runit (>= 0.0.0)
     yum (>= 0.0.0)
   ohai (2.0.1)
-  runit (1.5.10)
+  runit (1.5.18)
     build-essential (>= 0.0.0)
     yum (~> 3.0)
     yum-epel (>= 0.0.0)
-  yum (3.3.1)
-  yum-epel (0.5.1)
+  yum (3.5.4)
+  yum-epel (0.6.0)
     yum (~> 3.0)
